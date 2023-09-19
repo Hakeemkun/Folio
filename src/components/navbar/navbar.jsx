@@ -28,7 +28,7 @@ export const Navbar = () => {
   return (
     <div className="navContain" style={{background:navOnScroll?'white':'rgba(0, 0, 0, 0)',height:toggleValue?"100vh":"90px"}}>
     <div className='navbar' >
-        <div className="logo"><a href="/">Hakeem.</a></div>
+        <div className="logo"><a href="/Folio/">Hakeem.</a></div>
         <div className="menu">
             <div className="menuItem"><a href="#projects">Projects</a></div>
             <div className="menuItem"><a href="#service">Services</a></div>
