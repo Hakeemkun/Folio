@@ -1,5 +1,5 @@
 import React from 'react'
-import './app.css'
+
 import { Navbar } from './components/navbar/navbar'
 import { Hero } from './components/hero/hero'
 import { Skills } from './components/skills/skills'
