@@ -1,0 +1,42 @@
+.services{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.titleOfServiceSection{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 100px 0;
+    
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.334);
+    text-align: center;
+    width: 300px;
+    z-index: 1;
+}
+.service img{
+    width: 120px;
+}
+.titleOfService{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffc800;
+}
+.description{
+    padding: 25px 0;
+    font-size: 17px;
+    width: 90%;
+    font-family: sans-serif;
+}

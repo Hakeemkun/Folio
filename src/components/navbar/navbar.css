@@ -1,0 +1,136 @@
+html{
+    scroll-behavior: smooth;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navContain{
+    display:grid;
+    place-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar{
+    transition: all .7s;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    color: black;
+    background: rgba(0, 0, 0, 0);
+    
+}
+.logo{
+    margin-right: auto;
+
+}
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 38px;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7vw;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    color: black;
+}
+.menuItem{
+    cursor: pointer;
+    transition: all .3s;
+    
+}
+.menuItem a{
+    text-decoration: none;
+    color: black;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 150px;
+    height: 35px;
+    background-color: orange;
+}
+.contact a{
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    font-family:'Courier New', Courier, monospace ;
+}
+.menuItem:hover{
+    font-weight: 800;
+}
+.toggledMenu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 100vh;
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-direction: column;
+    background-color:#ffc800;
+    
+    color: black;
+
+
+    font-size: 50px;
+
+}
+.toggledItem{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100vw;
+    border-bottom:solid 4px ;
+    border-radius: 5%;
+}
+.toggledItem a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.close{
+    position: absolute;
+    font-size: 50px;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    border: solid 2px ;
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.burger{
+    display: none;
+    padding-top: 10px;
+}
+@media (max-width:750px) {
+    .burger{
+        display: inline;
+    }
+    .menu{
+        display: none;
+    }
+}
+@keyframes fadein {
+    from{bottom: 100vh;font-size: 0;border-radius: 0 0 100% 100%;}
+    to{bottom: 0; font-size: 50px;border-radius: 0 ;}
+}

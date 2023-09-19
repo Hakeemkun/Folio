@@ -1,0 +1,36 @@
+.contactSection{
+    width: 100%;
+    margin-top: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40vh;
+    border-radius: 20px;
+}
+.phone,.email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.contactSection div img{
+    width: 50px;
+}
+.contactSection span{
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+@media (max-width:750px) {
+    .contactSection{
+        flex-direction: column;
+    }
+    .contactSection span{
+        font-size: 17px;
+    }
+    .phone,.email{
+        flex-direction: column;
+    }
+
+}

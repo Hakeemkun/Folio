@@ -1,0 +1,137 @@
+
+.hero{
+    width: 80%;
+    height: 100vh;
+    padding: 14vh 8vw 0 8vw;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 15vw;
+    padding-top: 30vh;
+    align-items: start;
+    z-index: 1;
+}
+.heroCurve{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: #6c757d;
+    z-index: -1;
+    border-radius: 500px 0 0 500px;
+    animation: fadeCurveLeft .6s;
+
+}
+.pic img{
+    border-radius:50% ;
+    width: 300px;
+    border: 3px solid #6c757d ;
+    transition: all 1s;
+}
+.heroContent{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 10px;
+    text-align: start;
+}
+.bigTitleHero{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 42px;
+}
+.smallTitleHero{
+    color: #6c757d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+}
+.callToActionButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: #ffc800 solid 2px;
+    width: 150px;
+    height: 35px;
+    margin-top: 50px;
+    transition: all .5s;
+}
+.callToActionButton a{
+    color: #ffc800;
+    text-decoration: none;
+    font-size: larger;
+    font-family:'Courier New', Courier, monospace ;
+    transition: all .5s;
+}
+.callToActionButton :hover{
+    color: black;
+}
+.callToActionButton:hover{
+    background-color: #ffc800;
+}
+.dotes img{
+    width: 200px;
+}
+.dotes{
+    position: absolute;
+    top: 230px;
+    left:130px ;
+}
+@media (max-width:1250px) {
+    .hero{
+        flex-direction: column-reverse;
+        padding: 10vh;
+    }
+    .pic img{
+        width:250px ;
+    }
+    .heroCurve{
+        top: 70vh;
+        left: 0;
+        width: 100%;
+        height: 30vh;
+        border-radius: 50% 50% 0 0;
+        bottom: 0;
+        
+        animation: fadeCurveUp .6s;
+    }
+    .heroContent{
+        align-items: center;
+
+    }
+    
+}
+@media (max-width:650px) {
+    .bigTitleHero{
+        font-size: 25px;
+    }
+    .hero{
+        width: 85vw;
+        padding: 5vh;
+        align-items: center;
+    }
+    .smallTitleHero{
+        font-size: 15px;
+    }
+    .dotes img{
+        width: 150px;
+    }
+    .dotes{
+        left: 0;
+    }
+}
+
+@keyframes fadeCurveLeft {
+    from{width: 0;}
+    to{width: 50vw;}
+}
+@keyframes fadeCurveUp {
+    from{top: 100vh;}
+    to{top: 70vh;}
+}

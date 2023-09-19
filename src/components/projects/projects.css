@@ -1,0 +1,87 @@
+.projects{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.projectsTitle{
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    margin: 150px 0 0 0;
+}
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 15px;
+}
+.left{
+    position: relative;
+    border-right: 2px black solid;
+}
+.left img{
+    width: 40vw;
+    border-radius: 15px;
+}
+.links{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    bottom: -70px;
+    width: 100%;
+    gap: 50px;
+}
+.links img{
+    width: 40px;
+}
+.right{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+    position: relative;
+}
+.projectTitle{
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.projectDescription{
+    width: 60%;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+@media (max-width:750px) {
+    .left{
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid black;
+        border-radius: 15px;
+    }
+    .left img{
+        width: 100%;
+    }
+    .project{
+        flex-direction: column;
+    }
+    .links{
+        bottom: 0;
+    }
+    .projectTitle{
+        font-size: 22px;
+    }
+    .projectDescription{
+        font-size: 15px;
+        width: 100%;
+    }
+    .right{
+        gap: 15px;
+        padding: 10px 0 50px 0;
+    }
+}

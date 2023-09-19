@@ -1,0 +1,46 @@
+.skills{
+    margin:200px 0 ;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+.header{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    color: black;
+    font-weight: 700;
+}
+.skillsList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+.skill img {
+    width: 120px;
+    border-radius: 30%;
+}
+.arrow{
+    position: absolute;
+    top: 146vh;
+    left: 130px;
+}
+.arrow img{
+    width: 200px;
+}
+@media (max-width:650px) {
+    .arrow{
+        display: none;
+    }
+    .skillsList{
+        flex-direction: column;
+        animation: none;
+    }
+    .header{
+        font-size: 28px;
+    }
+}
