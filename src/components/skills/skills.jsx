@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import html from '../../assets/html-5.png'
 import css from "../../assets/css-3.png"
 import js from "../../assets/js.png" 
-import react from "../../assets/react-icon.png"
+import react from "../../assets/React-icon.png"
 import arrow from "../../assets/arrow.png"
 
 export const Skills = () => {
